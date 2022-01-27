@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Enero",
+    "countDays": 31,
+    "firstDay": 6
+  },
+  {
+    "id": 2,
+    "name": "Febrero",
+    "countDays": 28,
+    "firstDay": 2
+  },
+  {
+    "id": 3,
+    "name": "Marzo",
+    "countDays": 31,
+    "firstDay": 2
+  },
+  {
+    "id": 4,
+    "name": "Abril",
+    "countDays": 30,
+    "firstDay": 5
+  },
+  {
+    "id": 5,
+    "name": "Mayo",
+    "countDays": 31,
+    "firstDay": 7
+  },
+  {
+    "id": 6,
+    "name": "Junio",
+    "countDays": 30,
+    "firstDay": 3
+  },
+  {
+    "id": 7,
+    "name": "Julio",
+    "countDays": 31,
+    "firstDay": 5
+  },
+  {
+    "id": 8,
+    "name": "Agosto",
+    "countDays": 31,
+    "firstDay": 1
+  },
+  {
+    "id": 9,
+    "name": "Septiembre",
+    "countDays": 30,
+    "firstDay": 4
+  },
+  {
+    "id": 10,
+    "name": "Octubre",
+    "countDays": 31,
+    "firstDay": 6
+  },
+  {
+    "id": 11,
+    "name": "Noviembre",
+    "countDays": 30,
+    "firstDay": 2
+  },
+  {
+    "id": 12,
+    "name": "Diciembre",
+    "countDays": 31,
+    "firstDay": 4
+  }
+]
