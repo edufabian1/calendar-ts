@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Button from "./components/button/Button";
 import Item from "./components/list/item/Item";
 import Title from "./components/title/Title";
 
@@ -25,27 +26,33 @@ const App = () => {
   };
 
   return (
-    <div className="calendar">
-      <Title>Enero 2022</Title>
-      <ol>
-        {days.map((day: string, index: number) => (
-          <Item key={index} className="day-name">
-            {day}
-          </Item>
-        ))}
-        {Array.from(Array(month.countDays)).map(
-          (item: string, index: number) => (
-            <Item
-              key={index}
-              className={currentDate === index + 1 ? "current-day" : ""}
-              styles={isFirstDay(index)}
-            >
-              {index + 1}
+    <>
+      <div className="calendar">
+        <Title>Enero 2022</Title>
+        <ol>
+          {days.map((day: string, index: number) => (
+            <Item key={index} className="day-name">
+              {day}
             </Item>
-          )
-        )}
-      </ol>
-    </div>
+          ))}
+          {Array.from(Array(month.countDays)).map(
+            (item: string, index: number) => (
+              <Item
+                key={index}
+                className={currentDate === index + 1 ? "current-day" : ""}
+                styles={isFirstDay(index)}
+              >
+                {index + 1}
+              </Item>
+            )
+          )}
+        </ol>
+      </div>
+      <div className="container-button">
+        <Button className="button-primary previous">Anterior</Button>
+        <Button className="button-primary next">Siguiente</Button>
+      </div>
+    </>
   );
 };
 
