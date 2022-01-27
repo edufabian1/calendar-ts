@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;300&display=swap");
+
+body {
+  margin-top: 50px;
+  background: #dbe2ef;
+  font-family: "Outfit";
+}
+
+div {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 400px;
+  padding: 10px;
+}
+
+.calendar {
+  background: #f9f7f7;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+h1 {
+  background: #3f72af;
+  color: #f9f7f7;
+}
+
+ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+.day-name {
+  background: #eee;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.first-day {
+  grid-column-start: 5;
+}
+
+.current-day {
+  border: 1px solid;
+  border-radius: 50%;
+  margin: 3px 16px;
+  background: #92A9BD;
+  color: #f9f7f7;
+  font-weight: 600;
+}
