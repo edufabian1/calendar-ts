@@ -20,7 +20,6 @@ const App = () => {
   const currentMonth: number = new Date().getMonth() + 1;
 
   const [month, setMonth] = useState<IMonth | undefined>();
-  const [isDisableBtn, setIsDisableBtn] = useState<boolean>(false);
 
   const isFirstDay = (index: number): React.CSSProperties =>
     index === 0 ? { gridColumnStart: month?.firstDay } : {};
@@ -63,7 +62,7 @@ const App = () => {
               setMonth(months[month.id - 2]);
             }
           }}
-          disabled={isDisableBtn}
+          disabled={false}
         >
           Anterior
         </Button>
@@ -72,7 +71,7 @@ const App = () => {
           onClick={() => {
             if (month && months[month.id]) setMonth(months[month.id]);
           }}
-          disabled={isDisableBtn}
+          disabled={false}
         >
           Siguiente
         </Button>
